@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+.modal {
+  position: fixed; 
+  right: 50%;
+  top: 0;
+  width: 200px; 
+  height: 100px; 
+  background-color: pink; 
+  border: 3px solid red;
+  border-radius: 10px;
+  color: red;
+  font-size: 30px;
+  font-weight: 1000;
+  margin: 5px auto; 
+  padding: 15px;
+}
+
+/* Modal Content/Box */
+/* .modal-content {
+  border-radius: 10px;
+  background-color: pink;
+  color: red;
+  font-size: 30px;
+  font-weight: 1000;
+  margin: 5px auto; 
+  padding: 15px;
+  border: 3px solid red;
+  width: 80%; 
+} */
+
+button {
+  background-color: rgb(209, 70, 70);
+  font-weight: 800;
+  border-radius: 10px;
+}

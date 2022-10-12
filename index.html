@@ -34,21 +34,22 @@
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
     <form>
+      <h1 class="mb-4">Contact me</h1>
       <div class="form-group">
         <label for="exampleInputEmail1">Your E-mail Address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+        <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="name@example.com">
       </div>
       <div class="form-group">
         <label for="exampleInputSubject1">Subject</label>
-        <input type="subject" class="form-control" id="exampleInputPassword1" placeholder="Type subject here">
+        <input type="subject" class="form-control" id="subject-input" placeholder="Type subject here">
       </div>
       <div>
         <label for="exampleInputSubject1">Message body</label>
-        <textarea class="form-control mb-3" placeholder="Type message text here" id="floatingTextarea2"
+        <textarea class="form-control mb-3" placeholder="Type message text here" id="body-input"
         style="height: 100px"></textarea>
       </div>
 
-      <button id="submit-btn" type="button" class="btn btn-dark">Submit</button>
+      <button onclick="buildURL()" type="button" class="btn btn-dark">Submit</button>
     </form>
 
 
@@ -144,7 +145,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading portfolio">Portfolio</h2>
-          <h3 class="section-subheading text-light">A sneakpeak at some of the projects I've worked on</h3>
+          <h3 class="section-subheading text-light">Take a peak at some of the projects I've worked on</h3>
         </div>
       </div>
       <div id="projs" class="row">
@@ -153,13 +154,13 @@
 
 
   <!-- Me -->
-  <section class="bg-light" id="me" style="padding: 0px;">
+  <section class="me" id="me" style="padding: 0px;">
     <div class="row">
       <div class="col-sm-4">
         <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/me.jpg" alt="me">
+          <img class="mx-auto rounded-circle mt-4" src="img/team/me.jpg" alt="me">
           <h4>Amy Skaletzky</h4>
-          <p class="text-muted">Web Developer</p>
+          <p class="text-light">Web Developer</p>
           <ul class="list-inline social-buttons  mb-3">
             <li class="list-inline-item">
               <a href="https://twitter.com/amyyasminskal" target="_blank">
@@ -180,11 +181,7 @@
         </div>
       </div>
       <div class="col-sm-8 flex-align-center">
-        <p class="large text-muted  about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-          eaque, laboriosam veritatis, quos non quis ad perspiciatis,
-          totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-          laboriosam veritatis, quos non quis ad perspiciatis,
-          totam corporis ea, alias ut unde.</p>
+        <p class="large text-muted about-description"><span class="font-weight-bold text-light">A little about me</span></br></br> I'm 21, currently residing in Israel. My dream is to be a web developer. I've always loved the arts, but never thought I'd be able to combine work with one of my hobbies</p>
       </div>
     </div>
   </section>
@@ -219,19 +216,16 @@
         </div>
         <div class="col-md-4 flex-align-center">
           <ul class="list-inline quicklinks">
+          
             <li class="list-inline-item">
-              <a href="#">More Me</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Even More</a>
+              <a href="#">Back to Top</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     
-    Header Photo by <a class="text-dark" href="https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target=”_blank”>Andras Vas</a> on <a class="text-danger" href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target=”_blank”>Unsplash</a>
-  
+    Header Photo by <a class="text-warning" href="https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target=”_blank”>Andras Vas</a> on <a class="text-danger" href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target=”_blank”>Unsplash</a>
   </footer>
 
   <!-- Bootstrap core JavaScript -->

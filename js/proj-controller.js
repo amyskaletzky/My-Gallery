@@ -24,7 +24,7 @@ function renderProjs() {
                 </a>
                 <div class="portfolio-caption">
                 <h4>${proj.name}</h4>
-                <p class="text-muted">${proj.title}</p>
+                <p>${proj.title}</p>
                 </div>
             </div>
 `)
@@ -53,8 +53,8 @@ function renderModals() {
                                         <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}.png" alt="${proj.name}">
                                         <p>${proj.desc}</p>
                                         <ul class="list-inline">
-                                        <li>Date: ${proj.publishedAt}</li>
-                                        <li>Category: ${proj.labels.join(', ')} </li>
+                                        <li><span class="font-weight-bold">Date</span>: ${proj.publishedAt}</li>
+                                        <li><span class="font-weight-bold">Category</span>: ${proj.labels.join(', ')} </li>
                                         </ul>
                                         <button class="btn btn-primary" type="button">
                                         <i class="fa"></i>
@@ -71,11 +71,13 @@ function renderModals() {
                 </div> 
             </div>
     `)
-    document.querySelector('body').innerHTML += strHTML
+    document.querySelector('body').innerHTML += strHTML.join('')
 }
 
 
 
-
-
-
+function buildURL() {
+    console.log('hi');
+    const newURL = `https://mail.google.com/mail/?view=cm&fs=1&to=a.skaletzky@yahoo.com&su=${$('#subject-input').val()}&body=${$('#body-input').val()}%0d%0ayour+email:+${$('#email-input').val()}`
+    window.open(newURL)
+}

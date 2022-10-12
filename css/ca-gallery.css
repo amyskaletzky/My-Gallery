@@ -147,6 +147,7 @@ body {
 
 #mainNav .navbar-toggler:hover {
     background-color: #B6465F;
+    cursor: pointer;
 }
 #mainNav .navbar-brand {
     color: #89062E;
@@ -262,7 +263,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio {
-    color: #89062E !important;
+    color: #89062E !important;  
 }
 
 #portfolio {
@@ -279,6 +280,7 @@ header.masthead .intro-text .intro-heading {
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
+
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
@@ -288,7 +290,7 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(254, 209, 54, 0.9);
+    background: #a11a43;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
@@ -315,16 +317,22 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white;
+    background-color: #890620;
+    border-top: 2px solid white;
+
 }
+
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    color: rgb(233, 222, 222);
 }
+
 #portfolio .portfolio-item .portfolio-caption p {
     font-size: 16px;
     font-style: italic;
     margin: 0;
+    color: #C66A58;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #portfolio * {
@@ -584,13 +592,17 @@ header.masthead .intro-text .intro-heading {
         padding: 0 100px 20px 20px;
     }
 }
+
+.me {
+    background-color: #890620;
+}
+
 .team-member {
     text-align: center;
 }
 .team-member img {
     width: 225px;
     height: 225px;
-    border: 7px solid white;
 }
 .team-member h4 {
     margin-top: 25px;
@@ -611,6 +623,8 @@ header.masthead .intro-text .intro-heading {
     }
 }
 footer {
+    background-color: #222222;
+    color: white;
     padding: 25px 0;
     text-align: center;
 }
@@ -649,36 +663,35 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: #f0867e;
 }
 .flex-align-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text-primary {
-    color: #fed136 !important;
-}
 
+.text-primary {
+    color: #B00729 !important;
+}
 
 .btn-primary {
     font-weight: 700;
     color: white;
-    border-color: #fed136;
-    background-color: #DA9F93;
+    border-color: #890620;
+    background-color: #89062E;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 .btn-primary.focus,
 .btn-primary:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: #890620;
+    background-color: #89062E;
 }
 .btn-primary:hover {
-    color: white;
-    border-color: #f6bf01;
-    background-color: #C66A58;
+    border-color: #B6465F;
+    background-color: #B6465F;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -697,8 +710,8 @@ ul.social-buttons li a:hover {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle:hover {
     color: white;
-    border-color: #b48b01;
-    background-color: #dcab01;
+    border-color: #89062E;
+    background-color: #890620;
 }
 .btn-primary.active,
 .btn-primary:active,
