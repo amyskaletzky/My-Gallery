@@ -35,7 +35,7 @@ var gProjs = [{
     labels: ["JS Vanilla", "keyboard events"],
 },  {
     id: "inpicture",
-    name: "What's in the Picture?",
+    name: "In-Picture",
     title: "Guess what's in the picture!",
     desc: "lorem ipsum lorem ipsum lorem ipsum",
     url: "projs/sokoban",
