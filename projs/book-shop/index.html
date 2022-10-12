@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book Shop</title>
+</head>
+
+<body onLoad="onInit()">
+    <h1>Welcome to my bookshop</h1>
+    <button id="grid" onclick="buttonsHandler(-1)"><img src="img/grid.png" width="20px"></button>
+    <button id="table" onclick="buttonsHandler(1)"><img src="img/menu.png" width="20px"></button>
+    <button class="add" onclick="onAddBook()">Create new book</button>
+    <label>
+        Search for book:
+        <input class="filter-search-bar" type="text" oninput="onSetFilterBy({title: this.value})" placeholder="Type in name of book..." /><br>
+    </label>
+    <label>
+        Max Price:
+        <input type="range" min="0" max="40" value="0" class="filter-max-price"
+            onchange="this.title=this.value;onSetFilterBy({maxPrice: +this.value})" />
+    </label>
+    <label>
+        Min Rate:
+        <input type="range" min="0" max="10" value="0" class="filter-min-rate"
+            onchange="this.title=this.value;onSetFilterBy({minRate: +this.value})" />
+    </label>
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="modal">
+        <h2 class="top"></h2>
+        <h4>Price: <span></span> </h4>
+        <h3>Book Description</h3>
+        <p></p>
+        <div class="rate"></div>
+
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+
+    <section class="books-container"></section>
+
+    <button id="prev-page" onclick="onPrevPage()">Previous Page</button>
+    <button id="next-page" onclick="onNextPage()">Next Page</button>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+    <a href="https://www.flaticon.com/free-icons/grid" title="grid icons">Grid icons created by Kiranshastry - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/three-lines" title="three lines icons">Three lines icons created by joalfa - Flaticon</a>
+
+</body>
+
+</html>

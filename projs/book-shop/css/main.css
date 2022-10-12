@@ -1,0 +1,161 @@
+body {
+    background-color: #ffe5d9;
+    color: #EF818A;
+}
+
+h1 {
+    color: #DE4D86;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 80%;
+    background-color: #F7CACD;
+}
+
+td,
+th {
+    border: 1px solid;
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(235, 235, 235);
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #DE4D86;
+    /* change back to .add */
+}
+
+.read,
+.update,
+.delete {
+    color: aliceblue;
+}
+
+.read {
+    background-color: #EF818A;
+
+}
+
+.update {
+    background-color: #DE4D86;
+}
+
+.delete {
+    background-color: #64113F;
+}
+
+.add {
+    background-color: #EF818A;
+    color: #DE4D86;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: medium;
+}
+
+.add:hover {
+    color: aliceblue;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* #F29CA3; such a pretty light pink */
+/*  rgb(200, 200, 200) table
+ rgb(190, 190, 190) td th */
+
+
+.modal {
+    background-color: #64113F;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.open {
+    pointer-events: auto;
+    opacity: 1;
+    left: 50%;
+    transition: left .5s;
+}
+
+.modal h3 {
+    color: pink;
+}
+
+.top {
+    color: pink;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+.modal h4 span {
+    color: #C9D7F8;
+}
+
+.modal>p {
+    text-align: left;
+}
+
+.rate {
+    color: pink;
+    font-size: medium;
+}
+
+label {
+    margin-right: 20px;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-preview {
+    background-color: #F7CACD;
+    color: maroon;
+    width: 20%;
+    margin:.5em;
+    border: 1px solid #64113F;
+    border-radius: .2em;
+    text-align: center;
+    padding: 5px;
+}
+
+.book-preview .btn-remove {
+    float:right;
+}
+
+.on {
+    background-color: #84E6F8;
+}
+
+a {
+    color: #DE4D86;
+}
+
+#prev-page, #next-page {
+    margin-top: 10px;
+    background-color: #EF818A;
+}
+#prev-page:hover , #next-page:hover {
+    color: white;
+}
+#details-btn, #update-btn {
+    background-color: #EF818A;
+
+}
