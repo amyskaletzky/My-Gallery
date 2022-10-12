@@ -7,21 +7,21 @@ function onInit() {
     renderBooks(1)
 }
 
-function renderBooks(diff) {
+function renderBooks(isGrid) {          
     var elThead = document.querySelector('thead')
     var elTbody = document.querySelector('tbody')
     var books = getBooks()
     
     
-    if (diff === -1) {
-        elTbody.innerHTML = ''                                          // add classlist so i can change all functions according to grid/table layout
+    if (isGrid === -1) {    //instead of 1/0, send true/false
+        elTbody.innerHTML = ''                                          
         elThead.innerHTML = ''
         document.getElementById('table').classList.remove('on')
         elTable.classList.remove('table')
 
         var strHTML = books.map(book => `
         <article class="book-preview">
-            <button class="btn-remove" onclick="onRemoveBook('${book.id}')">X</button>
+            <button class="btn-remove" onclick="onRemoveBook('${book.id}')">x</button>
             <h4>${book.title}</h4>
             <h5>Price of book: <span>${book.price}</span></h5>
             <h5>Rating: <span>${book.rate}</span></h5>
@@ -183,4 +183,3 @@ function onCloseModal() {
 }
 
 
-// {/* <img onerror="this.src='img/fiat.png'" src="img/${book.}.png" alt="Car by ${car.vendor}"> */}

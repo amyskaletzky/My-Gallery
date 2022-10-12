@@ -28,14 +28,29 @@
 
 <body id="page-top">
   <div class="offcanvas-btn" onclick="openCanvas()">
-    <i class="fa fa-comment" aria-hidden="true"></i>
+    <i class="fa fa-comment text-light" aria-hidden="true"></i>
   </div>
   <aside class="offcanvas-aside">
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
-    <section>
-      <h4>Contact Me</h4>
-    </section>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Your E-mail Address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputSubject1">Subject</label>
+        <input type="subject" class="form-control" id="exampleInputPassword1" placeholder="Type subject here">
+      </div>
+      <div>
+        <label for="exampleInputSubject1">Message body</label>
+        <textarea class="form-control mb-3" placeholder="Type message text here" id="floatingTextarea2"
+        style="height: 100px"></textarea>
+      </div>
+
+      <button id="submit-btn" type="button" class="btn btn-dark">Submit</button>
+    </form>
+
 
   </aside>
 
@@ -69,10 +84,10 @@
 
   <!-- Header -->
   <header class="masthead">
-    <div class="container">
+    <div>
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To my Portfolio</div>
-        <div class="intro-heading">It's Nice To Meet You</div>
+        <div class="intro-lead-in">Hey! I'm Amy</div>
+        <div class="intro-heading">Welcome to my Portfolio</div>
         <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
@@ -80,7 +95,7 @@
 
   <!-- Services -->
   <a name="services"></a>
-  <section>
+  <section class="specialities">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -91,7 +106,7 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-circle fa-stack-2x text-danger"></i>
             <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">E-Commerce</h4>
@@ -101,7 +116,7 @@
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-circle fa-stack-2x text-danger"></i>
             <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Responsive Design</h4>
@@ -111,7 +126,7 @@
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-circle fa-stack-2x text-danger"></i>
             <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Web Security</h4>
@@ -124,12 +139,12 @@
   </section>
 
   <!-- Portfolio Grid -->
-  <section class="bg-light" id="portfolio">
+  <section id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading portfolio">Portfolio</h2>
+          <h3 class="section-subheading text-light">A sneakpeak at some of the projects I've worked on</h3>
         </div>
       </div>
       <div id="projs" class="row">
@@ -214,7 +229,8 @@
         </div>
       </div>
     </div>
-    Header photo by <a href="https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andras Vas</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    
+    Header Photo by <a class="text-dark" href="https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target=”_blank”>Andras Vas</a> on <a class="text-danger" href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target=”_blank”>Unsplash</a>
   
   </footer>
 

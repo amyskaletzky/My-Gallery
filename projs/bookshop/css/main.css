@@ -30,7 +30,6 @@ button {
     padding: 5px;
     border-radius: 5px;
     border: 2px solid #DE4D86;
-    /* change back to .add */
 }
 
 .read,
@@ -54,7 +53,7 @@ button {
 
 .add {
     background-color: #EF818A;
-    color: #DE4D86;
+    color: #64113f;
     margin-bottom: 20px;
     margin-right: 20px;
     font-size: medium;
@@ -126,10 +125,11 @@ label {
 }
 
 .book-preview {
+    color: #EF818A;
     background-color: #F7CACD;
-    color: maroon;
+    /* color: maroon; */
     width: 20%;
-    margin:.5em;
+    margin: .5em;
     border: 1px solid #64113F;
     border-radius: .2em;
     text-align: center;
@@ -137,7 +137,7 @@ label {
 }
 
 .book-preview .btn-remove {
-    float:right;
+    float: right;
 }
 
 .on {
@@ -148,14 +148,35 @@ a {
     color: #DE4D86;
 }
 
-#prev-page, #next-page {
+#prev-page,
+#next-page {
     margin-top: 10px;
     background-color: #EF818A;
+    color: #64113f;
 }
-#prev-page:hover , #next-page:hover {
+
+#prev-page:hover,
+#next-page:hover {
     color: white;
 }
-#details-btn, #update-btn {
+
+#details-btn,
+#update-btn {
     background-color: #EF818A;
+    color: #64113f;
 
 }
+
+#details-btn:hover,
+#update-btn:hover {
+    color: aliceblue;
+}
+
+.btn-remove {
+    background-color: #DE4D86;
+}
+
+.btn-remove:hover {
+    background-color: #e696b6;
+}
+

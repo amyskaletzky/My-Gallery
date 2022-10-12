@@ -1,0 +1,36 @@
+body {
+    background-color: lightcoral;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid lightgray;
+}
+
+button {
+    background-color: lightblue;
+    padding: 5px;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(199, 161, 225);
+}
+
+.restart {
+    background-color: brown;
+    color: white;
+}
+
+div {
+    text-align:center;
+}
+

@@ -5,7 +5,6 @@ $(document).ready(init)
 
 function init() {
     renderProjs()
-    console.log(getFormattedTimeDate(Date.now()));
     renderModals()
 }
 
@@ -21,7 +20,7 @@ function renderProjs() {
                 <i class="fa fa-plus fa-3x"></i>
                 </div>
                 </div>
-                <img class="img-fluid" src="img/portfolio/0${proj.id}-thumbnail.jpg" >
+                <img class="img-fluid" src="img/portfolio/${proj.id}.png" >
                 </a>
                 <div class="portfolio-caption">
                 <h4>${proj.name}</h4>
@@ -34,7 +33,7 @@ function renderProjs() {
 
 function renderModals() {
     const projs = getProjsForDisplay()
-
+    
     const strHTML = projs.map(proj => `
             <div class="portfolio-modal modal fade" id="portfolioModal${proj.id}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog">
@@ -51,13 +50,16 @@ function renderModals() {
                                     <!-- Project Details Go Here -->
                                         <h2>${proj.name}</h2>
                                         <p class="item-intro text-muted">${proj.title}</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/portfolio/0${proj.id}-full.jpg" alt="${proj.name}">
+                                        <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.id}.png" alt="${proj.name}">
                                         <p>${proj.desc}</p>
                                         <ul class="list-inline">
                                         <li>Date: ${proj.publishedAt}</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
+                                        <li>Category: ${proj.labels.join(', ')} </li>
                                         </ul>
+                                        <button class="btn btn-primary" type="button">
+                                        <i class="fa"></i>
+                                        <a href="projs/${proj.id}" tab target="_blank">
+                                        Check it out</button></a>
                                         <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-times"></i>
                                         Close Project</button>
@@ -72,21 +74,8 @@ function renderModals() {
     document.querySelector('body').innerHTML += strHTML
 }
 
-function getFormattedDate(ts) {
-    var t = new Date(ts)
-    return {
-        time: t.toLocaleTimeString(),
-        date: t.toLocaleDateString()
-    }
-}
 
 
 
 
-// function getFormattedTimeDate(ts) {
-//     var t = new Date(ts)
-//     return {
-//         time: t.toLocaleTimeString(),
-//         date: t.toLocaleDateString()
-//     }
-// }
+
